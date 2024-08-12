@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:8-browsers
+      - image: atlassianlabs/docker-node-jdk-chrome-firefox:2022-12-28
     steps:
       - checkout
       - restore_cache:
